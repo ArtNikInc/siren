@@ -30,6 +30,7 @@ public class PostController {
     public PostDto savePost(@NonNull @RequestBody PostDto postDto) {
         return service.save(postDto);
     }
+
     @PutMapping("/")
     public PostDto updatePost(@NonNull @RequestBody PostDto postDto) {
         return service.update(postDto.getId(), postDto);
