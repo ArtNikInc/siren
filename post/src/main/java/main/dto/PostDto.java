@@ -3,8 +3,6 @@ package main.dto;
 import lombok.*;
 import org.springframework.lang.Nullable;
 
-import java.util.Date;
-import java.util.List;
 import java.util.UUID;
 
 @Builder
