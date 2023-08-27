@@ -12,7 +12,7 @@ import java.util.UUID;
 @Builder
 @AllArgsConstructor
 @Entity
-@Table(name = "post")
+@Table(name = "posts")
 public class Post {
 
     @Id
@@ -22,7 +22,7 @@ public class Post {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "subTitle")
+    @Column(name = "sub_title")
     private String subTitle;
 
     @Column(name = "body")

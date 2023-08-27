@@ -3,6 +3,7 @@ package main.dto;
 import lombok.*;
 import org.springframework.lang.Nullable;
 
+import java.util.Date;
 import java.util.UUID;
 
 @Builder
@@ -21,5 +22,9 @@ public class PostDto {
     private String body;
 
     private String subTitle;
+
+    private Date createdAt;
+
+    private Date publishedAt;
 
 }

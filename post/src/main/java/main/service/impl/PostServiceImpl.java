@@ -60,6 +60,9 @@ public class PostServiceImpl implements PostService {
                 .id(id)
                 .title(postDto.getTitle())
                 .body(postDto.getBody())
+                .subTitle(postDto.getSubTitle())
+                .createdAt(postDto.getCreatedAt())
+                .publishedAt(postDto.getPublishedAt())
                 .build();
         return mapper.toDto(repository.save(post));
     }
