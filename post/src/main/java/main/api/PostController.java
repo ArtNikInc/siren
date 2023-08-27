@@ -31,6 +31,11 @@ public class PostController {
         return service.save(postDto);
     }
 
+    @PutMapping("/")
+    public PostDto updatePost(@NonNull @RequestBody PostDto postDto) {
+        return service.update(postDto.getId(), postDto);
+    }
+
     @DeleteMapping("/{id}")
     public void deletePost(@NonNull @PathVariable UUID id) {
         service.delete(id);

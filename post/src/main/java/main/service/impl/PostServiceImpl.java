@@ -27,7 +27,7 @@ public class PostServiceImpl implements PostService {
     public PostDto save(PostDto postDto) {
         Date date = new Date();
         Post post = Post.builder()
-                .body(postDto.getText())
+                .body(postDto.getBody())
                 .title(postDto.getTitle())
                 .subTitle(postDto.getSubTitle())
                 .createdAt(date)
@@ -59,7 +59,7 @@ public class PostServiceImpl implements PostService {
         Post post = Post.builder()
                 .id(id)
                 .title(postDto.getTitle())
-                .body(postDto.getText())
+                .body(postDto.getBody())
                 .build();
         return mapper.toDto(repository.save(post));
     }
